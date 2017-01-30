@@ -86,6 +86,7 @@
     const alpha = people.sort(function(last, next){
       const [aLast, aFirst] = last.split(', ');
       const [Last, First] = next.split(', ');
+      return aLast > aFirst ? 1 : -1 ;
     });
 
 
